@@ -32,7 +32,6 @@ while True:
             diff += 4096
         if diff:
             print(angle, last_angle, diff)
+            if diff < 128 and diff > -128:
+                s.send_report(diff)
         last_angle = angle
-    
-#       if diff < 128 and diff > -128:
-#           s.send_report(diff)
