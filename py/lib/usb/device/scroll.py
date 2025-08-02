@@ -14,21 +14,15 @@ class ScrollInterface(HIDInterface):
     def __init__(self, interface_str="MicroPython Scroll"):
         super().__init__(
             _MOUSE_REPORT_DESC,
-            set_report_buf=bytearray([1,]),
+            set_report_buf=bytearray(1),
             protocol=_INTERFACE_PROTOCOL_MOUSE,
             interface_str=interface_str,
         )
         self._buf = bytearray(1)
         self.lastSet = []
-        self.lastGet = 0
-        self.feature = bytearray(1)
-
-    def get_report(self):
-        self.lastGet += 1
-        return self.feature
 
     def on_set_report(self, report_data, report_id, report_type):
-        self.lastSet.append((report_data, report_id, report_type))
+        self.lastSet.append((bytes(report_data), report_id, report_type))
         print(report_data, report_id, report_type)
 
     def send_report(self, pos):
