@@ -201,8 +201,7 @@ class HIDInterface(Interface):
             elif req_type == _REQ_TYPE_CLASS:
                 # HID Spec p50: 7.2 Class-Specific Requests
                 if bRequest == _REQ_CONTROL_GET_REPORT:
-                    print("GET_REPORT?")
-                    return False  # Unsupported for now
+                    return self.get_report()
                 if bRequest == _REQ_CONTROL_GET_IDLE:
                     return bytes([self.idle_rate])
                 if bRequest == _REQ_CONTROL_GET_PROTOCOL:
