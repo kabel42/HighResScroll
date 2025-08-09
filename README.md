@@ -22,5 +22,5 @@ mpremote connect /dev/ttyACM0 cp MT6701_main.py :/main.py
 ```
 
 TODO:
-- reveive and evaluate feature report, currently reports 0 bytes
+- receive and evaluate feature report, currently report length is 0 bytes
 - measured values are sometimes twichy
