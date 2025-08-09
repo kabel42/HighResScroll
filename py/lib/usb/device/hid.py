@@ -123,6 +123,7 @@ class HIDInterface(Interface):
         if not self.is_open():
             return False
         self.submit_xfer(self._int_ep, report_data)
+        return True
 
     def desc_cfg(self, desc, itf_num, ep_num, strs):
         # Add the standard interface descriptor
@@ -201,7 +202,8 @@ class HIDInterface(Interface):
             elif req_type == _REQ_TYPE_CLASS:
                 # HID Spec p50: 7.2 Class-Specific Requests
                 if bRequest == _REQ_CONTROL_GET_REPORT:
-                    return self.get_report()
+                    print("GET_REPORT?")
+                    return False  # Unsupported for now
                 if bRequest == _REQ_CONTROL_GET_IDLE:
                     return bytes([self.idle_rate])
                 if bRequest == _REQ_CONTROL_GET_PROTOCOL:
