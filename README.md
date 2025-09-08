@@ -1,3 +1,6 @@
+<img src="https://github.com/user-attachments/assets/52296139-d4d9-4c58-9260-cb8f846ac552" width=45%>
+<img src="https://github.com/user-attachments/assets/d10e6dc8-8441-4333-ae52-c85ab27b845c" width=45%>
+
 A high res scroll wheel inspired by the [ploopy knob](https://github.com/ploopyco/knob)
 
 Running micropython on a raspberry pi rp2040.
