@@ -11,9 +11,8 @@ Descriptors based on [QMK](https://github.com/qmk/qmk_firmware/pull/24423/files#
 # Software
 Tested in Linux
 
-copy files with:
+copy library files with:
 ``` bash
-mpremote connect /dev/ttyACM0 cp boot.py :/
 mpremote connect /dev/ttyACM0 cp -r lib :/
 ```
 for AS5600
@@ -24,6 +23,11 @@ mpremote connect /dev/ttyACM0 cp AS5600_main.py :/main.py
 for MT6701
 ``` bash
 mpremote connect /dev/ttyACM0 cp MT6701_main.py :/main.py
+```
+
+don't copy boot.py, it makes updating more difficult, its contents have been merged to the main files
+``` bash
+mpremote connect /dev/ttyACM0 cp boot.py :/
 ```
 
 TODO:
