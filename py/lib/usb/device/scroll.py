@@ -1,6 +1,6 @@
-# MicroPython USB Mouse module
+# MicroPython USB scroll wheel module
 #
-# MIT license; Copyright (c) 2023-2024 Angus Gratton
+# MIT license; Copyright (c) 2023-2024 Angus Gratton, 2025 Jannis Konrad
 from micropython import const
 import struct
 import machine
