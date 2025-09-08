@@ -32,6 +32,3 @@ TODO:
 # Body
 3d/ contains designfiles describing intenden geometry of the case
 3dprint/ contains data optimized for 3d printing with more tollerances
-
-https://github.com/user-attachments/assets/21a3f5e5-98a5-4176-ba1b-4752741dd023
-
