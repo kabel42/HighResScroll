@@ -40,7 +40,7 @@ _MOUSE_REPORT_DESC = (
     b'\x15\x00' #   LOGICAL_MINIMUM (0)
     b'\x25\x01' #   LOGICAL_MAXIMUM (1)
     b'\x35\x01' #   PHYSICAL_MINIMUM (1)
-    b'\x45\x10' #   PHYSICAL_MAXIMUM (16)
+    b'\x45\x80' #   PHYSICAL_MAXIMUM (128)
     b'\x95\x01' #   REPORT_COUNT (1)
     b'\x75\x02' #   REPORT_SIZE (2)
     b'\xb1\x02' #   FEATURE (Data,Var,Abs)
