@@ -36,7 +36,7 @@ while True:
         time.sleep_ms(100)
     else:
         if not magOk:
-            n[0] = (0, 255, 0)
+            n[0] = (0, 0, 0)
             n.write()
             magOk = True
 
