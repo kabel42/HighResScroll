@@ -5,6 +5,9 @@ from machine import Pin, I2C
 import struct
 import neopixel
 
+dir = Pin(26, Pin.OUT)
+dir.value(0)
+
 s = ScrollInterface()
 usb.device.get().init(s, builtin_driver=True)
 
