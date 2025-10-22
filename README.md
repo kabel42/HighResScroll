@@ -37,3 +37,5 @@ TODO:
 # Body
 3d/ contains the initial designfiles describing intenden geometry of the case \
 3dprint/ contains data optimized for 3d printing with more tollerances, tested on a bambulab a1 mini with pla
+
+[Bearing](aliexpress.com/item/1005007669751275.html)
