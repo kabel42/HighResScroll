@@ -30,10 +30,6 @@ don't copy boot.py, it makes updating more difficult, its contents have been mer
 mpremote connect /dev/ttyACM0 cp boot.py :/
 ```
 
-TODO:
-- receive and evaluate feature report, currently report length is 0 bytes
- - Works fine without on Linux
-
 # Body
 3d/ contains the initial designfiles describing intenden geometry of the case \
 3dprint/ contains data optimized for 3d printing with more tollerances, tested on a bambulab a1 mini with pla
